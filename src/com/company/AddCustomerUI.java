@@ -101,10 +101,12 @@ public class AddCustomerUI extends JFrame {
             s = txtPhone.getText();
             if (s.length() != 10) {
                 JOptionPane.showMessageDialog(null,
-                        "Invalid Phone Number (Format: 3344444444) !!!");
+                        "Invalid Phone Number (Format: 3347895678)");
+                System.out.println(s);
                 return;
-            }
 
+            }
+            System.out.println(s);
 
             customerModel.mPhone = Integer.parseInt(s);
 
